@@ -1,0 +1,69 @@
+<ion-view>
+  <ion-nav-bar>
+    <ion-nav-title>
+      Detail Property
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <buttons class="button icon ion-arrow-left-a" ng-click="btnBack()"></buttons>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+      <button class="button button-icon" ng-click="btnEDIT()">Edit</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content>
+    <img src="img/ionic.png" style="margin-left: auto;margin-right: auto;display: block;padding:2em;">
+    <div class="list">
+      <div class="item item-icon-left">
+        <i class="icon ion-ios-information-outline"></i>
+          PropertyCode : {{txtPropCode}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-ios-information-outline"></i>
+        PropertyName : {{txtPropName}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-ios-calculator"></i>
+        WSamt : {{txtWSamt}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-ios-calculator"></i>
+        OLamt : {{txtOLamt}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-checkmark-circled"></i>
+        PStatus : {{txtPStatus}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-calendar"></i>
+        SDate : {{txtSDate}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-calendar"></i>
+        EDate : {{txtEDate}}
+      </div>
+
+      <div class="item item-icon-left">
+
+        <i class="icon ion-key"></i>
+        <label class="item  item-input">
+        <input type="text" ng-model="form.txtKeyLicense" placeholder="KeyLicense" ng-disabled="isDisabled">
+
+        </label>
+      </div>
+
+
+      <div class="content padding">
+
+        <button class="button button-block button-assertive" ng-click="btnDELETE()">
+          <i class="icon ion-ios-trash"></i>
+          DELETE
+        </button>
+
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

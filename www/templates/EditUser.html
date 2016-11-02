@@ -1,0 +1,51 @@
+<ion-view>
+  <ion-nav-bar>
+    <ion-nav-title>
+      Edit User
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <buttons class="button icon ion-arrow-left-a" ng-click="btnBack()"></buttons>
+    </ion-nav-buttons>
+
+  <ion-content>
+    <img src="img/ionic.png" style="margin-left: auto;margin-right: auto;display: block;padding:2em;">
+    <div class="list">
+
+
+      <label class="item item-input">
+        <span class="input-label">Username :</span> {{txt_username}}
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">Fullname :</span>
+        <input type="text" ng-model="form.txt_fullname" placeholder="Fullname">
+      </label>
+
+     <label class="item item-input">
+       <span class="input-label">E-mail :</span>
+       <input type="email" ng-model="form.txt_email" placeholder="E-mail">
+      </label>
+
+      <label class="item item-input">
+       <span class="input-label">Phone :</span>
+       <input type="tel" ng-model="form.txt_phone" placeholder="Phone">
+      </label>
+
+      <ion-checkbox ng-model="form.txt_genapplincese" ng-value>Gen App License</ion-checkbox>
+
+      <ion-checkbox ng-model="form.txt_genmalicense" ng-value>Gen ma License</ion-checkbox>
+
+      <ion-checkbox ng-model="form.txt_typeadmin" ng-value>Type Admin</ion-checkbox>
+
+      <div class="content padding">
+
+        <button class="button button-block button-balanced" ng-click="btnEDIT()">
+          DONE
+        </button>
+
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

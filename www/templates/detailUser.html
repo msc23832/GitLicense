@@ -1,0 +1,67 @@
+<ion-view>
+  <ion-nav-bar>
+    <ion-nav-title>
+      Detail User
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <buttons class="button icon ion-arrow-left-a" ng-click="btnBack()"></buttons>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+      <button class="button button-icon" ng-click="btnEDIT()">Edit</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content>
+    <img src="img/ionic.png" style="margin-left: auto;margin-right: auto;display: block;padding:2em;">
+    <div class="list">
+      <div class="item item-icon-left">
+      <i class="icon ion-ios-information-outline"></i>
+        Username : {{txtUserName}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-ios-information-outline"></i>
+        Password : {{txtUserPass}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-person"></i>
+        Fullname : {{txtUserFullname}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-email"></i>
+        Email : {{txtUserEmail}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>
+        Phone : {{txtUserPhone}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-checkmark-circled"></i>
+        App Gen License : {{txtAppGen}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-checkmark-circled"></i>
+        App ma License : {{txtAppMa}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-checkmark-circled"></i>
+        Type Admin : {{txtTypeAdmin}}
+      </div>
+      <div class="content padding">
+
+        <button class="button button-block button-balanced" ng-click="btnPASS()">
+          <i class="icon ion-key"></i>
+          CHANGE PASSWORD
+        </button>
+
+        <button class="button button-block button-assertive" ng-click="btnDELETE()">
+          <i class="icon ion-ios-trash"></i>
+          DELETE
+        </button>
+
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

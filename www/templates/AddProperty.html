@@ -1,0 +1,62 @@
+<ion-view>
+  <ion-nav-bar>
+    <ion-nav-title>
+      Add Property
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <buttons class="button icon ion-arrow-left-a" ng-click="btnBack()"></buttons>
+    </ion-nav-buttons>
+
+  <ion-content>
+    <img src="img/ionic.png" style="margin-left: auto;margin-right: auto;display: block;padding:2em;">
+    <div class="list">
+
+
+        <label class="item item-input">
+          <span class="input-label">PropertyCode :</span>
+          <input type="text" ng-model="form.txt_propcode" placeholder="PropertyCode">
+        </label>
+
+      <label class="item item-input">
+          <span class="input-label">PropertyName :</span>
+          <input type="text" ng-model="form.txt_propname" placeholder="PropertyName">
+      </label>
+
+      <label class="item item-input">
+          <span class="input-label">WorkStation Amount :</span>
+          <input type="number" ng-model="form.txt_wsamt" inputmode="numeric" pattern="[0-9]*" placeholder="WSamt">
+      </label>
+
+      <label class="item item-input">
+          <span class="input-label">Outlet Amount :</span>
+          <input type="number" ng-model="form.txt_olamt" inputmode="numeric" pattern="[0-9]*" placeholder="OLamt">
+      </label>
+
+      <ion-checkbox ng-model="form.txt_pstatus" ng-value>Payment Status</ion-checkbox>
+
+     <label class="item item-input">
+       <span class="input-label">Start Date :</span>
+          <ionic-datepicker date="SDate">
+              <button class="button button-block ion-calendar" ng-click="openDatePickerOne()"> {{SDate | date:'dd/MMMM/yyyy' }} </button>
+          </ionic-datepicker>
+      </label>
+
+      <label class="item item-input">
+       <span class="input-label">End Date :</span>
+        <ionic-datepicker date="EDate">
+              <button class="button button-block ion-calendar" ng-click="openDatePickerTwo()"> {{EDate | date:'dd/MMMM/yyyy' }} </button>
+        </ionic-datepicker>
+      </label>
+
+      <div class="content padding">
+
+        <button class="button button-block button-balanced" ng-click="btnADD()">
+          DONE
+        </button>
+
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

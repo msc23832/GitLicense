@@ -1,0 +1,34 @@
+<ion-view>
+  <ion-nav-bar>
+    <ion-nav-title>
+      Detail Log
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <buttons class="button icon ion-arrow-left-a" ng-click="btnBack()"></buttons>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content>
+    <img src="img/ionic.png" style="margin-left: auto;margin-right: auto;display: block;padding:2em;">
+    <div class="list">
+      <div class="item item-icon-left">
+      <i class="icon ion-ios-information-outline"></i>
+        Log Group : {{txtLoggroupName}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-ios-information-outline"></i>
+        Log Message : {{txtLogMsg}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-person"></i>
+        Fullname : {{txtUserFullname}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-calendar"></i>
+        Log Time : {{txtLogTime}}
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

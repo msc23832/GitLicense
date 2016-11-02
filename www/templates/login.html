@@ -1,0 +1,32 @@
+<ion-view>
+  <ion-nav-bar>
+    <ion-nav-title>
+      Please SIGN IN
+    </ion-nav-title>
+  </ion-nav-bar>
+
+  <ion-content>
+    <div class="list">
+
+      <label class="item item-input">
+          <span class="input-label">User</span>
+          <input type="text" placeholder="username" ng-model="form.txt_user">
+      </label>
+
+      <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="Password" ng-model="form.txt_password">
+      </label>
+
+      <div class="content padding">
+        <button class="button button-block button-positive" ng-click="btnLogin()">LOGIN</button>
+      </div>
+
+      <ion-item>
+      <ion-label>Start Date</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+    </ion-item>
+
+    </div>
+  </ion-content>
+</ion-view>

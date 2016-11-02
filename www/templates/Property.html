@@ -1,0 +1,29 @@
+<ion-view>
+  <ion-nav-bar>
+    <ion-nav-title>
+      Properties
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <buttons class="button icon" ng-click="btnLogout()">LOGOUT</buttons>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+      <button class="button button-icon icon ion-ios-plus-empty" ng-click="btnAdd()"></button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content>
+    <ion-refresher pulling-text="Pull to refresh" refreshingSpinner="circles" refreshingText="Refreshing..." on-refresh="doRefresh()"></ion-refresher>
+    <div class="list">
+      <div class="item item-avatar-left item-icon-right" ng-click="btnDetail(data)" ng-repeat="data in myDataArray">
+        <img src="img/ionic.png">
+        <h2>PropertyCode : {{data.PropertyCode}}</h2>
+        <p>PropertyName : {{data.PropertyName}}</p>
+        <i class="icon ion-android-share"></i>
+      </div>
+    </div>
+  </ion-content>
+
+
+</ion-view>

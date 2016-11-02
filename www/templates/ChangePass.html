@@ -1,0 +1,41 @@
+<ion-view>
+  <ion-nav-bar>
+    <ion-nav-title>
+      Change Password
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <buttons class="button icon ion-arrow-left-a" ng-click="btnBack()"></buttons>
+    </ion-nav-buttons>
+
+  <ion-content>
+    <img src="img/ionic.png" style="margin-left: auto;margin-right: auto;display: block;padding:2em;">
+    <div class="list">
+
+
+      <label class="item item-input">
+        <span class="input-label">Old Password :</span>
+        <input type="password" ng-model="form.txt_oldpassword" placeholder="Old Password">
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">New Password :</span>
+        <input type="password" ng-model="form.txt_newpassword" placeholder="New Password">
+      </label>
+
+     <label class="item item-input">
+       <span class="input-label">Confirm Password :</span>
+       <input type="password" ng-model="form.txt_comfirmpass" placeholder="Confirm Password">
+      </label>
+
+      <div class="content padding">
+
+        <button class="button button-block button-balanced" ng-click="btnEDIT()">
+          DONE
+        </button>
+
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
